@@ -44,6 +44,7 @@ kotlin {
             implementation(libs.kotlinx.datetime)
 
             implementation(libs.koin.core)
+            implementation(libs.koin.compose)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -62,6 +63,8 @@ kotlin {
             implementation(libs.ktor.client.android)
 
             implementation(libs.android.sqldelight.driver)
+
+            implementation(libs.koin.android)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
