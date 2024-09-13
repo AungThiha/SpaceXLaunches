@@ -4,5 +4,7 @@ import org.koin.core.module.Module
 
 val appModule : List<Module> = listOf(
     databaseModule,
-    spaceXSdkModule
+    spaceXSdkModule,
+    launchesModule,
+    platformModule
 )
