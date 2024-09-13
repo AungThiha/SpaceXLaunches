@@ -26,7 +26,7 @@ kotlin {
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
-            isStatic = true
+            isStatic = false
         }
     }
     
@@ -55,6 +55,8 @@ kotlin {
 
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
+            implementation(libs.sqldelight.coroutines)
         }
         androidMain.dependencies {
             implementation(compose.preview)
@@ -117,4 +119,3 @@ sqldelight {
        }
     }
  }
-
